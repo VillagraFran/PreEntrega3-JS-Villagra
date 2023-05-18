@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-shadow: 10px 1px 10px 15px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+#carrito {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.623);
+}
+
+#carrito img {
+    width: 50px;
+    height: 50px;
+}
+
+#carrito .carrito-number {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrito .carrito-number p{
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-image: url("./img/burger\ restaurant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.options-menu {
+    height: 100%;
+    width: 200px;
+    background-image: url("./img/fbd54215-5e0c-4784-9cf4-c872a2780eb5.jpg");
+    background-size: contain;
+}
+
+.products-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 20px;
+}
+
+/* CARDS */
+
+.products-menu .card {
+    margin: 20px;
+}
+
+.products-menu .card:hover {
+    background-color: rgb(204, 204, 204);
+    transition: 0.2s;
+}
+
+.products-menu .card img {
+    height: 200px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-weight: 500;
+}
+
+/* OFFCANVAS */
+
+.offcanvas-header {
+    background-image: url("./img/burned\ wood\ wallpaper.png");
+    color: white;
+    text-transform: uppercase;
+}
+
+.offcanvas-body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(147,147,147,1) 100%);
+}
+
+.offcanvas-end {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.offcanvas-end button {
+    margin: 5px;
+}
+
+.total-price {
+    margin: 10px;
+}
+
+.carProductCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.87);
+    margin: 5px 0px;
+    border-radius: 10px;
+    color: white;
+}
+
+.carProductCard img {
+    height: 100px;
+    width: 120px;
+}
+
+.card-content{
+    display: flex;
+}
+
+.car-card-info {
+    display: flex;
+    align-items: center;
+}
+
+.car-card-info button {
+    height: 20px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+
+.car-text p{
+    margin: 0;
+}
+
+/* MODAL */
+
+.modal-header {
+    background-image: url("./img/burned\ wood\ wallpaper.png");
+    color: white;
+}
+
+.modal-body{
+    background-color: rgb(189, 189, 189);
+}
+
+form {
+    padding-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 50px;
+    height: auto;
+    background-image: url("./img/burned\ wood\ wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
